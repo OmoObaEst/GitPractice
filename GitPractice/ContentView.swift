@@ -14,6 +14,10 @@ struct ContentView: View {
             Text("Change 1!")
            
             Image("cat")
+                .aspectRatio(contentMode.fit)
+            Image("baby")
+                .resizable(resizingMode: .stretch)
+            Spacer()
             
         }
         .padding()

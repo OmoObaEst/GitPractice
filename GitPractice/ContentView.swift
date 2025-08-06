@@ -12,6 +12,7 @@ struct ContentView: View {
         VStack {
             
             Text("Change 1!")
+           
             Image("cat")
             
         }

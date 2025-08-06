@@ -9,15 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 20.0) {
+            Image("cat")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio( contentMode .fit)
+                .cornerRadius(20)
+            Image("baby")
+                .resizable()
+                .aspectRatio(contentMode .fit)
+                .cornerRadius(20)
             
             Text("Change 1!")
-           
-            Image("cat")
-                .aspectRatio(contentMode.fit)
-            Image("baby")
-                .resizable(resizingMode: .stretch)
-            Spacer()
             
         }
         .padding()
